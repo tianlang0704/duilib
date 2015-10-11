@@ -880,9 +880,12 @@ CControlUI* CControlUI::ApplyAttributeList(LPCTSTR pstrList)
 {
     CDuiString sItem;
     CDuiString sValue;
+	int iQuoteCounter;
     while( *pstrList != _T('\0') ) {
         sItem.Empty();
         sValue.Empty();
+		iQuoteCounter = 0;
+		while (*pstrList > _T('\0') && *pstrList <= _T(' ')) pstrList = ::CharNext(pstrList);
         while( *pstrList != _T('\0') && *pstrList != _T('=') ) {
             LPTSTR pstrTemp = ::CharNext(pstrList);
             while( pstrList < pstrTemp) {
@@ -893,11 +896,13 @@ CControlUI* CControlUI::ApplyAttributeList(LPCTSTR pstrList)
         if( *pstrList++ != _T('=') ) return this;
         ASSERT( *pstrList == _T('\"') );
         if( *pstrList++ != _T('\"') ) return this;
-        while( *pstrList != _T('\0') && *pstrList != _T('\"') ) {
+		while ((*pstrList != _T('\0') && *pstrList != _T('\"')) || iQuoteCounter >= 0) {
             LPTSTR pstrTemp = ::CharNext(pstrList);
             while( pstrList < pstrTemp) {
                 sValue += *pstrList++;
             }
+			if (*pstrList == _T('\"'))
+				*(pstrList - 1) == _T('=') ? iQuoteCounter++ : iQuoteCounter--;		//*TODO: Add skip white space
         }
         ASSERT( *pstrList == _T('\"') );
         if( *pstrList++ != _T('\"') ) return this;

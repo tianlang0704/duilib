@@ -2344,7 +2344,7 @@ void CPaintManagerUI::ReloadImages()
 				if( data->bUseHSL ) {
 					data->pSrcBits = new BYTE[data->nX * data->nY * 4];
 					::CopyMemory(data->pSrcBits, data->pBits, data->nX * data->nY * 4);
-				}
+				} 
 				else data->pSrcBits = NULL;
 				if( m_bUseHSL ) CRenderEngine::AdjustImage(true, data, m_H, m_S, m_L);
 

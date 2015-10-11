@@ -277,7 +277,8 @@ CControlUI* CDialogBuilder::_Parse(CMarkupNode* pRoot, CControlUI* pParent, CPai
 {
     IContainerUI* pContainer = NULL;
     CControlUI* pReturn = NULL;
-    for( CMarkupNode node = pRoot->GetChild() ; node.IsValid(); node = node.GetSibling() ) {
+    for( CMarkupNode node = pRoot->GetChild() ; node.IsValid(); node = node.GetSibling() ) 
+	{
         LPCTSTR pstrClass = node.GetName();
         if( _tcsicmp(pstrClass, _T("Image")) == 0 || _tcsicmp(pstrClass, _T("Font")) == 0 \
             || _tcsicmp(pstrClass, _T("Default")) == 0 
