@@ -39,6 +39,9 @@ namespace DuiLib
 		TDrawInfo m_diThumb;
 		TDrawInfo m_diThumbHot;
 		TDrawInfo m_diThumbPushed;
+
+	private:
+		void UpdateValue(POINT ptMouse);
 	};
 }
 
