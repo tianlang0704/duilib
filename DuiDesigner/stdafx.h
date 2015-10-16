@@ -197,7 +197,6 @@ using DuiLib::CListContainerElementUI;
 using DuiLib::CScrollBarUI;
 using DuiLib::IContainerUI;
 using DuiLib::STRINGorID;
-using DuiLib::TRelativePosUI;
 using DuiLib::TImageInfo;
 using DuiLib::TFontInfo;
 using DuiLib::TEventUI;

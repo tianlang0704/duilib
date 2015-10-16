@@ -1,4 +1,4 @@
-﻿Build started 10/15/2015 1:01:42 喵喵.
+﻿Build started 10/16/2015 12:41:19 喵.
      1>Project "D:\[C]Work\GitHub\duilib\DuiLib\DuiLib.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          Z:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D UILIB_EXPORTS /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Build\Debug/DuiLib.pch" /Fo".\Build\Debug\\" /Fd".\Build\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
@@ -85,4 +85,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.22
+Time Elapsed 00:00:04.29

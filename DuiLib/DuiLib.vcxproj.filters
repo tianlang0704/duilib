@@ -2,39 +2,39 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{a2fe8411-9c58-4aab-9f5a-85eee203c192}</UniqueIdentifier>
+      <UniqueIdentifier>{d17ed55a-c32a-4c46-b316-bf05b66efe0f}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
     </Filter>
     <Filter Include="Source Files\Utils">
-      <UniqueIdentifier>{a63edbd8-8668-424f-8f36-48efe7bf359f}</UniqueIdentifier>
+      <UniqueIdentifier>{3eed4bc6-ab67-4a2a-936a-55f5ceb917c9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Core">
-      <UniqueIdentifier>{b604e8f1-0f3e-4e5f-aa98-73658df372e7}</UniqueIdentifier>
+      <UniqueIdentifier>{2671f100-77f0-457d-b8ec-61e1116f45d3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Layout">
-      <UniqueIdentifier>{b420ec73-e85c-4e86-8398-c89685b25713}</UniqueIdentifier>
+      <UniqueIdentifier>{dd86f6aa-495a-4e5a-8229-9df2228f404b}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Control">
-      <UniqueIdentifier>{efae88b3-6a00-4798-8417-c8bdf067ce37}</UniqueIdentifier>
+      <UniqueIdentifier>{8ffa27d5-ba7f-4c25-904d-5d79569a22e9}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{eec7ff48-98ce-4f0f-91c6-928b64ddd013}</UniqueIdentifier>
+      <UniqueIdentifier>{df6ec4d6-8128-4244-a8f6-9e75f9734137}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl</Extensions>
     </Filter>
     <Filter Include="Header Files\Utils">
-      <UniqueIdentifier>{1b53060b-d187-4acf-87bd-53e23cca13dd}</UniqueIdentifier>
+      <UniqueIdentifier>{bd1a6882-5ced-4f4a-a501-f49c77dec360}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Core">
-      <UniqueIdentifier>{ee78e399-ed50-409c-ac48-54d8c035cafb}</UniqueIdentifier>
+      <UniqueIdentifier>{c7cdc053-4342-4919-b391-edb7f10a23e3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Layout">
-      <UniqueIdentifier>{2abeea9a-1739-4430-9b2f-74e7800afee3}</UniqueIdentifier>
+      <UniqueIdentifier>{e66b3d2e-5c38-4bf5-99b6-257311fc0f0c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\Control">
-      <UniqueIdentifier>{1567c133-ba97-4fd5-a1ad-f9fc59589d16}</UniqueIdentifier>
+      <UniqueIdentifier>{7ab68f4c-0d88-4298-9e25-343ff5c53a1d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resource Files">
-      <UniqueIdentifier>{7c266628-0237-45a9-9aee-758319650b60}</UniqueIdentifier>
+      <UniqueIdentifier>{add905d6-bb1e-44c6-9ece-d12d85f8942b}</UniqueIdentifier>
       <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
   </ItemGroup>

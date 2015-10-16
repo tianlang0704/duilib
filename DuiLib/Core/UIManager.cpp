@@ -1971,7 +1971,7 @@ void CPaintManagerUI::RemoveFont(HFONT hFont, bool bShared)
 	}
 }
 
-void CPaintManagerUI::RemoveFont(int id, bool bShared)
+bool CPaintManagerUI::RemoveFont(int id, bool bShared)
 {
 	TCHAR idBuffer[16];
 	::ZeroMemory(idBuffer, sizeof(idBuffer));
@@ -1985,7 +1985,7 @@ void CPaintManagerUI::RemoveFont(int id, bool bShared)
 		{
 			::DeleteObject(pFontInfo->hFont);
 			delete pFontInfo;
-			m_SharedResInfo.m_CustomFonts.Remove(idBuffer);
+			return m_SharedResInfo.m_CustomFonts.Remove(idBuffer);
 		}
 	}
 	else
@@ -1995,9 +1995,11 @@ void CPaintManagerUI::RemoveFont(int id, bool bShared)
 		{
 			::DeleteObject(pFontInfo->hFont);
 			delete pFontInfo;
-			m_ResInfo.m_CustomFonts.Remove(idBuffer);
+			return m_ResInfo.m_CustomFonts.Remove(idBuffer);
 		}
 	}
+
+	return false;
 }
 
 void CPaintManagerUI::RemoveAllFonts(bool bShared)

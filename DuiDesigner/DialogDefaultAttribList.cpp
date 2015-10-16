@@ -64,12 +64,12 @@ BOOL CDialogDefaultAttribList::OnInitDialog()
 
 	m_pManager = g_pMainFrame->GetActiveUIView()->GetPaintManager();
 	ASSERT(m_pManager);
-	const CStdStringPtrMap& DefaultAttribHash = m_pManager->GetDefaultAttribultes();
-	for(int i=0; i<DefaultAttribHash.GetSize(); i++)
-	{
-		LPCTSTR pstrName = DefaultAttribHash.GetAt(i);
-		m_lstDefaultAttrib.AddString(pstrName);
-	}
+	//const CStdStringPtrMap& DefaultAttribHash = m_pManager->GetDefaultAttribultes();
+	//for(int i=0; i<DefaultAttribHash.GetSize(); i++)
+	//{
+	//	LPCTSTR pstrName = DefaultAttribHash.GetAt(i);
+	//	m_lstDefaultAttrib.AddString(pstrName);
+	//}
 
 	return TRUE;  // return TRUE unless you set the focus to a control
 	// EXCEPTION: OCX Property Pages should return FALSE

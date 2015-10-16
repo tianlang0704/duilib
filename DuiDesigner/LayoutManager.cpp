@@ -1662,12 +1662,12 @@ void CLayoutManager::SaveControlProperty(CControlUI* pControl, TiXmlElement* pNo
 		pNode->SetAttribute("minheight", StringConvertor::WideToUtf8(szBuf));
 	}
 
-	TRelativePosUI relativePos = pControl->GetRelativePos();
-	if(relativePos.bRelative)
-	{
-		_stprintf_s(szBuf, _T("%d,%d,%d,%d"), relativePos.nMoveXPercent, relativePos.nMoveYPercent, relativePos.nZoomXPercent, relativePos.nZoomYPercent);
-		pNode->SetAttribute("relativepos", StringConvertor::WideToUtf8(szBuf));
-	}
+	//TRelativePosUI relativePos = pControl->GetRelativePos();
+	//if(relativePos.bRelative)
+	//{
+	//	_stprintf_s(szBuf, _T("%d,%d,%d,%d"), relativePos.nMoveXPercent, relativePos.nMoveYPercent, relativePos.nZoomXPercent, relativePos.nZoomYPercent);
+	//	pNode->SetAttribute("relativepos", StringConvertor::WideToUtf8(szBuf));
+	//}
 
 	if (pControl->IsMouseEnabled()==false)
 	{
@@ -2489,26 +2489,26 @@ bool CLayoutManager::SaveSkinFile( LPCTSTR pstrPathName )
 		}
 	}
 
-	const CStdStringPtrMap& defaultAttrHash = m_Manager.GetDefaultAttribultes();
-	if(defaultAttrHash.GetSize() > 0)
-	{
-		for (int index = 0; index < defaultAttrHash.GetSize(); ++index)
-		{
-			LPCTSTR lpstrKey = defaultAttrHash.GetAt(index);
-			LPCTSTR lpstrAttribute = m_Manager.GetDefaultAttributeList(lpstrKey);
+	//const CStdStringPtrMap& defaultAttrHash = m_Manager.GetDefaultAttribultes();
+	//if(defaultAttrHash.GetSize() > 0)
+	//{
+	//	for (int index = 0; index < defaultAttrHash.GetSize(); ++index)
+	//	{
+	//		LPCTSTR lpstrKey = defaultAttrHash.GetAt(index);
+	//		LPCTSTR lpstrAttribute = m_Manager.GetDefaultAttributeList(lpstrKey);
 
-			TiXmlElement* pAttributeElem = new TiXmlElement("Default");
-			pAttributeElem->SetAttribute("name", StringConvertor::WideToUtf8(lpstrKey));
+	//		TiXmlElement* pAttributeElem = new TiXmlElement("Default");
+	//		pAttributeElem->SetAttribute("name", StringConvertor::WideToUtf8(lpstrKey));
 
-			CString strAttrib(lpstrAttribute);
-			pAttributeElem->SetAttribute("value", StringConvertor::WideToUtf8(strAttrib));
+	//		CString strAttrib(lpstrAttribute);
+	//		pAttributeElem->SetAttribute("value", StringConvertor::WideToUtf8(strAttrib));
 
-			pNode->ToElement()->InsertEndChild(*pAttributeElem);
+	//		pNode->ToElement()->InsertEndChild(*pAttributeElem);
 
-			delete pAttributeElem;
-			pAttributeElem = NULL;
-		}
-	}
+	//		delete pAttributeElem;
+	//		pAttributeElem = NULL;
+	//	}
+	//}
 
 	SaveProperties(pForm->GetItemAt(0), pNode->ToElement());
 
@@ -2672,17 +2672,17 @@ void CLayoutManager::SaveItemProperty( CControlUI* pControl, TiXmlElement* pNode
 		pNode->SetAttribute("itemlinecolor", StringConvertor::WideToUtf8(szBuf));
 	}
 
-	if(pListInfo->sBkImage && _tcslen(pListInfo->sBkImage) > 0)
-		pNode->SetAttribute("itembkimage", StringConvertor::WideToUtf8(ConvertImageFileName(pListInfo->sBkImage)));
+	//if(pListInfo->sBkImage && _tcslen(pListInfo->sBkImage) > 0)
+	//	pNode->SetAttribute("itembkimage", StringConvertor::WideToUtf8(ConvertImageFileName(pListInfo->sBkImage)));
 
-	if(pListInfo->sSelectedImage && _tcslen(pListInfo->sSelectedImage) > 0)
-		pNode->SetAttribute("itemselectedimage", StringConvertor::WideToUtf8(ConvertImageFileName(pListInfo->sSelectedImage)));
+	//if(pListInfo->sSelectedImage && _tcslen(pListInfo->sSelectedImage) > 0)
+	//	pNode->SetAttribute("itemselectedimage", StringConvertor::WideToUtf8(ConvertImageFileName(pListInfo->sSelectedImage)));
 
-	if(pListInfo->sHotImage && _tcslen(pListInfo->sHotImage) > 0)
-		pNode->SetAttribute("itemhotimage", StringConvertor::WideToUtf8(ConvertImageFileName(pListInfo->sHotImage)));
+	//if(pListInfo->sHotImage && _tcslen(pListInfo->sHotImage) > 0)
+	//	pNode->SetAttribute("itemhotimage", StringConvertor::WideToUtf8(ConvertImageFileName(pListInfo->sHotImage)));
 
-	if(pListInfo->sDisabledImage && _tcslen(pListInfo->sDisabledImage) > 0)
-		pNode->SetAttribute("itemdisabledimage", StringConvertor::WideToUtf8(ConvertImageFileName(pListInfo->sDisabledImage)));
+	//if(pListInfo->sDisabledImage && _tcslen(pListInfo->sDisabledImage) > 0)
+	//	pNode->SetAttribute("itemdisabledimage", StringConvertor::WideToUtf8(ConvertImageFileName(pListInfo->sDisabledImage)));
 
 	CDuiString tstrAlgin;
 	UINT uTextStyle = pListInfo->uTextStyle;

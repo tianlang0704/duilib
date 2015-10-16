@@ -79,7 +79,8 @@ void CDialogCustomFonts::OnBnClickedButtonFontAdd()
 	{
 		LOGFONT lf = { 0 };
 		dlg.GetCurrentFont(&lf);
-		m_pManager->AddFont(lf.lfFaceName, -lf.lfHeight, (lf.lfWeight == FW_BOLD), lf.lfUnderline!=0, lf.lfItalic!=0);
+		//TODO: find the font id
+		//m_pManager->AddFont(,lf.lfFaceName, -lf.lfHeight, (lf.lfWeight == FW_BOLD), lf.lfUnderline!=0, lf.lfItalic!=0);
 
 		CString str;
 		int nCount = m_lstCustomFonts.GetItemCount();
@@ -106,7 +107,7 @@ void CDialogCustomFonts::OnBnClickedButtonFontDelete()
 		, _T("ÌבÊ¾"), MB_ICONINFORMATION | MB_OKCANCEL) == IDCANCEL)
 		return;
 
-	if(m_pManager->RemoveFontAt(nIndex))
+	if(m_pManager->RemoveFont(nIndex))
 	{
 		m_lstCustomFonts.DeleteItem(nIndex);
 		int nCount = m_lstCustomFonts.GetItemCount();

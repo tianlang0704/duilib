@@ -263,7 +263,7 @@ public:
 	int GetFontIndex(HFONT hFont, bool bShared = false);
 	int GetFontIndex(LPCTSTR pStrFontName, int nSize, bool bBold, bool bUnderline, bool bItalic, bool bShared = false);
     void RemoveFont(HFONT hFont, bool bShared = false);
-    void RemoveFont(int id, bool bShared = false);
+    bool RemoveFont(int id, bool bShared = false);
     void RemoveAllFonts(bool bShared = false);
     TFontInfo* GetFontInfo(int id);
     TFontInfo* GetFontInfo(HFONT hFont);
