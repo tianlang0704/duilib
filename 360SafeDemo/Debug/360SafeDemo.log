@@ -1,0 +1,19 @@
+﻿Build started 10/15/2015 1:01:47 喵喵.
+     1>Project "D:\[C]Work\GitHub\duilib\360SafeDemo\360SafeDemo.vcxproj" on node 5 (Rebuild target(s)).
+     1>ClCompile:
+         Z:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug/360Safe.pch" /Fo".\Debug/" /Fd".\Debug/vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         Z:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug/360Safe.pch" /Fo".\Debug/" /Fd".\Debug/vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt 360Safe.cpp
+         360Safe.cpp
+       Link:
+         Z:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\[C]Work\GitHub\duilib\bin\360Safe_d.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug/360Safe.pdb" /MAP:".\Debug/360Safe.map" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\[C]Work\GitHub\duilib\bin\360Safe_d.lib" /MACHINE:X86 /SAFESEH .\Debug/360Safe.obj
+         .\Debug/StdAfx.obj
+         "D:\[C]Work\GitHub\duilib\lib\DuiLib_d.lib"
+         360SafeDemo.vcxproj -> D:\[C]Work\GitHub\duilib\bin\360Safe_d.exe
+       BscMake:
+         Z:\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\Debug/360Safe.bsc" .\Debug\360Safe.sbr .\Debug\StdAfx.sbr
+     1>Done Building Project "D:\[C]Work\GitHub\duilib\360SafeDemo\360SafeDemo.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.90

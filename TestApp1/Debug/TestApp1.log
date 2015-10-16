@@ -1,0 +1,19 @@
+﻿Build started 10/15/2015 1:01:47 喵喵.
+     1>Project "D:\[C]Work\GitHub\duilib\TestApp1\TestApp1.vcxproj" on node 3 (Rebuild target(s)).
+     1>ClCompile:
+         Z:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug/TestApp1.pch" /Fo".\Debug/" /Fd".\Debug/vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         Z:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug/TestApp1.pch" /Fo".\Debug/" /Fd".\Debug/vc120.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt App.cpp
+         App.cpp
+       Link:
+         Z:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\[C]Work\GitHub\duilib\TestApp1\..\bin\TestApp1_d.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug/TestApp1.pdb" /MAP:".\Debug/TestApp1.map" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\bin\TestApp1_d.lib" /MACHINE:X86 /SAFESEH .\Debug/App.obj
+         .\Debug/StdAfx.obj
+         "D:\[C]Work\GitHub\duilib\lib\DuiLib_d.lib"
+         TestApp1.vcxproj -> D:\[C]Work\GitHub\duilib\TestApp1\..\bin\TestApp1_d.exe
+       BscMake:
+         Z:\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o".\Debug/TestApp1.bsc" .\Debug\App.sbr .\Debug\StdAfx.sbr
+     1>Done Building Project "D:\[C]Work\GitHub\duilib\TestApp1\TestApp1.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.92

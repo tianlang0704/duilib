@@ -88,7 +88,7 @@ public:
         if( uMsg == WM_CREATE ) {
             m_pm.Init(m_hWnd);
             CDialogBuilder builder;
-            CControlUI* pRoot = builder.Create(_T("test1.xml"), (UINT)0, NULL, &m_pm);
+            CControlUI* pRoot = builder.Create(_T(".\\skin\\TestApp1\\test1.xml"), (UINT)0, NULL, &m_pm);
             ASSERT(pRoot && "Failed to parse XML");
             m_pm.AttachDialog(pRoot);
             m_pm.AddNotifier(this);
