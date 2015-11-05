@@ -284,6 +284,7 @@ _Pvt_Extensions
 *.la
 *.a
 *.lib
+*.exp
 
 # Executables
 *.exe
