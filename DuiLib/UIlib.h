@@ -27,7 +27,9 @@
 // NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#if defined(UILIB_EXPORTS)
+#if defined(UILIB_STATIC)
+#define UILIB_API
+#elif defined(UILIB_EXPORTS)
 #if defined(_MSC_VER)
 #define UILIB_API __declspec(dllexport)
 #else
