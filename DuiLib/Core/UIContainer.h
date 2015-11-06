@@ -64,13 +64,13 @@ public:
 
     virtual int FindSelectable(int iIndex, bool bForward = true) const;
 
-	void SetPos(RECT rc, bool bNeedInvalidate = true);
-	void Move(SIZE szOffset, bool bNeedInvalidate = true);
-    void DoPaint(HDC hDC, const RECT& rcPaint);
+	virtual void SetPos(RECT rc, bool bNeedInvalidate = true);
+	virtual void Move(SIZE szOffset, bool bNeedInvalidate = true);
+    virtual void DoPaint(HDC hDC, const RECT& rcPaint);
 
-    void SetAttribute(LPCTSTR pstrName, LPCTSTR pstrValue);
+    virtual void SetAttribute(LPCTSTR pstrName, LPCTSTR pstrValue);
 
-    void SetManager(CPaintManagerUI* pManager, CControlUI* pParent, bool bInit = true);
+    virtual void SetManager(CPaintManagerUI* pManager, CControlUI* pParent, bool bInit = true);
     CControlUI* FindControl(FINDCONTROLPROC Proc, LPVOID pData, UINT uFlags);
 
 	bool SetSubControlText(LPCTSTR pstrSubControlName,LPCTSTR pstrText);

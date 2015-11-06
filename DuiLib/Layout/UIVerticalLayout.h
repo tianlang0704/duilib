@@ -10,19 +10,19 @@ namespace DuiLib
 	public:
 		CVerticalLayoutUI();
 
-		LPCTSTR GetClass() const;
-		LPVOID GetInterface(LPCTSTR pstrName);
-		UINT GetControlFlags() const;
+		virtual LPCTSTR GetClass() const;
+		virtual LPVOID GetInterface(LPCTSTR pstrName);
+		virtual UINT GetControlFlags() const;
 
 		void SetSepHeight(int iHeight);
 		int GetSepHeight() const;
 		void SetSepImmMode(bool bImmediately);
 		bool IsSepImmMode() const;
-		void SetAttribute(LPCTSTR pstrName, LPCTSTR pstrValue);
-		void DoEvent(TEventUI& event);
+		virtual void SetAttribute(LPCTSTR pstrName, LPCTSTR pstrValue);
+		virtual void DoEvent(TEventUI& event);
 
-		void SetPos(RECT rc, bool bNeedInvalidate = true);
-		void DoPostPaint(HDC hDC, const RECT& rcPaint);
+		virtual void SetPos(RECT rc, bool bNeedInvalidate = true);
+		virtual void DoPostPaint(HDC hDC, const RECT& rcPaint);
 
 		RECT GetThumbRect(bool bUseNew = false) const;
 
